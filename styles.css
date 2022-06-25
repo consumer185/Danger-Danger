@@ -1,24 +1,26 @@
 body {
   width: 390px;
   height: 812px;
-  background-color: red;
+  background-color: white;
+   justify-content: center;
+   display: flex;
+   align-items: center;
 }
 
-
 img {
-
+  text-align: center;
+  width: 80%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-
-
-
+vertical-align: middle;
 }
 
 p {
   margin-left: auto;
   margin-right: auto;
-font-family: Roboto;
-font-size: 15rem;
-margin: 0;
-text-align: center;
+  font-family: Roboto;
+  font-size: 15rem;
+  margin: 0;
+  text-align: center;
 }
