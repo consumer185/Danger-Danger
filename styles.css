@@ -1,8 +1,14 @@
+body {
+  width: 390px;
+  height: 844px;
+}
+
+
 img {
 
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  
 
 
 }
