@@ -10,7 +10,7 @@ var numberOfImages = 20;
 window.addEventListener('touchstart', function() {
   audioPlay();
   imageDisplay();
-  console.log("now playing the following audio: " + nextTrack);
+
   console.log("now displaying the following image: " + imageToDisplay);
 });
 
@@ -18,14 +18,24 @@ window.addEventListener('touchstart', function() {
 window.addEventListener('click', function() {
   audioPlay();
   imageDisplay();
-  console.log("now playing the following audio: " + nextTrack);
+
   console.log("now displaying the following image: " + imageToDisplay);
 });
 
 
 function imageDisplay() {
   randomNumber = Math.floor(Math.random() * 21);
-imageToDisplay = randomNumber + ".svg";
+  imageToDisplay = randomNumber + ".svg";
+
+  const img = new Image(100, 100); // width, height
+  img.src = "images/" + imageToDisplay;
+  img.style.position = 'fixed';
+  img.style.top = '1px';
+img.style.bottom = '1px';
+img.style.left = '1px';
+img.style.right = '1px';
+
+  document.body.appendChild(img);
 
 
 }
