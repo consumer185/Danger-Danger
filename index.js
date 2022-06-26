@@ -1,9 +1,9 @@
 // on click/tap
-// 1. play the next sequencial audio clip
+// 1. play the  audio track
 // 2. generate a random number between 0 and 20, use this to display *.svg image with random position and rotation
 
-var nextTrack = 0;
-var numberOfTracks = 2;
+
+var audioElement = new Audio('audio/Danger.mp3');
 var numberOfImages = 20;
 
 
@@ -32,10 +32,5 @@ imageToDisplay = randomNumber + ".svg";
 
 
 function audioPlay() {
-
-  if (nextTrack === numberOfTracks) {
-    nextTrack = 0;
-  } else if (nextTrack < numberOfTracks) {
-    nextTrack = nextTrack + 1;
-  }
+  audioElement.play();
 }
