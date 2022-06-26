@@ -8,7 +8,7 @@ var numberOfImages = 20;
 
 
 window.addEventListener('touchstart', function() {
-  audioPlay();
+  // audioPlay();
   imageDisplay();
 
   console.log("now displaying the following image: " + imageToDisplay);
@@ -16,7 +16,7 @@ window.addEventListener('touchstart', function() {
 
 
 window.addEventListener('click', function() {
-  audioPlay();
+  // audioPlay();
   imageDisplay();
 
   console.log("now displaying the following image: " + imageToDisplay);
