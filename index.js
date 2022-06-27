@@ -24,20 +24,34 @@ window.addEventListener('click', function() {
 
 
 function imageDisplay() {
+
+  //get a random number to reference images
   randomNumber = Math.floor(Math.random() * 21);
   imageToDisplay = randomNumber + ".svg";
 
-  const img = new Image(100, 100); // width, height
+  // give image random size between 50 and 300
+  randomScale = Math.floor(Math.random() * (300 - 50 + 1) + 50);
+  const img = new Image(randomScale, randomScale); // width, height
   img.src = "images/" + imageToDisplay;
+
+  // setup as fixed position
   img.style.position = 'fixed';
-  img.style.top = '1px';
-img.style.bottom = '1px';
-img.style.left = '1px';
-img.style.right = '1px';
 
+  // give image random positions according to page size
+  randomPositionTop = Math.floor(Math.random() * 1500);
+  randomPositionLeft = Math.floor(Math.random() * 865);
+
+  //random rotation
+  randomRotation = Math.floor(Math.random() * 360);
+  img.style.transform = "rotate("+ randomRotation +"deg)";
+
+  img.style.top = randomPositionTop + 'px';
+  img.style.left = randomPositionLeft + 'px';
+
+
+
+  //append image to document body
   document.body.appendChild(img);
-
-
 }
 
 

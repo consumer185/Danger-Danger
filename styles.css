@@ -4,6 +4,8 @@ div {
   justify-content: center;
   display: flex;
   padding-top: 250px;
+  /*this stops annoyting iphone zoom on double touch*/
+  touch-action: pan-y;
 }
 
 .background {
@@ -12,4 +14,11 @@ div {
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
+/*this stops annoyting iphone zoom on double touch*/
+  touch-action: pan-y;
+}
+
+body {
+  /*this stops annoyting iphone zoom on double touch*/
+  touch-action: pan-y;
 }
